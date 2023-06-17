@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>IMAGE MOVING WEBSITE</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <section>
+            <img src="bg.jpg" id="bg">
+            <h2 id="text">HIMALAYAS</h2>
+            <img src="man.png" id="man">
+            <img src="clouds_1.png" id="clouds_1">
+            <img src="clouds_2.png" id="clouds_2">
+            <img src="mountain_left.png" id="mountain_left">
+            <img src="mountain_right.png" id="mountain_right">
+        </section>
+        <div class="sec">
+            <h2>THE HIMALAYAS</h2>
+            <p>Himalayan is one of the most beautiful mountain range in the world, the mountains in the Himalayan range are always covered with snow throughout the year. Watching at these mountains it looks like they are the houses made from the snow. Because of tall peaks, the Himalayan mountain is also referred as the kings of all the mountains.
+                There are many beautify locations present in the Himalayan mountain. To see this location many people all around the world visit India all year round. The Himalayan mountain range is the crown of India and it is situated in the north direction. There are many religious places in the Himalayan mountain and many rivers that originate in this Himalayan mountain range.
+                The world's tallest mountain Mount Everest is also situated in the Himalayan range, it is so huge that its peak looks like it is touching the sky. Mountaineer from all around the world visit here to climb Mount Everest and to experience its beauty.
+                Mount Kailash where it is said that Lord Shiv exists is also situated in the Himalayan mountain range it is also a tall mountain but is smaller as compared to Everest but still, till today no mountaineer has successfully climbed it. Like mount Kailash that are many other religious places present like Badrinath, Kedarnath, Haridwar and many more were lots of devotees visit all year round.
+                To watch the beauty of Himalaya many tourists visit the Himalayan mountains, there are many tourist places famous in Kashmir where beautiful gardens are present. Because of the beauty of Kashmir, it is also called the Nandanvan which means paradise. Darjeeling and Kullu Manali are also very famous tourist spots.
+                All the major rivers in north India originate from the Himalayan mountains this river includes Ganga, Yamuna, Brahmaputra, and other tributaries. All rivers are considered as very sacred and holy. This river provides water to complete north India. For farmers in north India, these rivers are a gift of God, because of this river here farming is a major occupation and farmers do the excellent quality of farming. Hydroelectricity is also generated with the help of these rivers which lights north India.
+                Himalaya is not only now for its beauty but is also protects India from the other country as the tall mountains act as a barrier which is almost impossible to cross. This prevents India from attacks from the neighboring countries. And also because of the tall peak of the Himalayan mountain, there is very heavy rainfall in our country which makes rivers flow all year round with fresh water. Without Himalaya, India would have turned into a desert.
+                In Himalaya there are many medicinal plants found with are only grown in the specific region of Himalaya as the climate is favorable there.
+                There are so many advantages which the Himalayas gives us, it attracts tourist with its beauty and also protects us and feed us. Himalayas mountain range is the pride of our country.
+                The End.</p>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+        <script>
+            gsap.to("#bg", {
+                scrollTrigger : {
+                    scrub : 1
+                },
+                scale : 1.5
+            });
+
+            gsap.to("#man", {
+                scrollTrigger : {
+                    scrub : 1
+                },
+                scale : 0.5
+            });
+
+            gsap.to("#mountain_left", {
+                scrollTrigger : {
+                    scrub : 1
+                },
+                x : -500,
+            });
+
+            gsap.to("#mountain_right", {
+                scrollTrigger : {
+                    scrub : 1
+                },
+                x : 500,
+            });
+
+            gsap.to("#clouds_1", {
+                scrollTrigger : {
+                    scrub : 1
+                },
+                x : 200,
+            });
+
+            gsap.to("#clouds_2", {
+                scrollTrigger : {
+                    scrub : 1
+                },
+                x : -200,
+            });
+
+            gsap.to("#text", {
+                scrollTrigger : {
+                    scrub : 1
+                },
+                y : 500,
+            });
+        </script>
+    </body>
+</html>
